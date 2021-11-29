@@ -1,0 +1,14 @@
+Link Repositorio: https://github.com/CristianCT/KataCRUD
+
+Preguntas:
+1. ¿Para que sirve el Hook useContext?
+	Permite acceder a datos globales de la aplicación desde cualquier componente
+	sin necesidad de pasar información por los props.
+
+2. ¿Para que sirve el Hook useReducer?
+	Permite actualizar un estado interno haciendo uso de una función llamada reducer.
+
+3. ¿Redux o useContext?
+	Redux y el Hook useContext tienen un comportamiento similar, sin embargo, Redux
+	tiene mayor potencial y mas funcionalidades que podrian englobar el fucncionamiento
+	de varios hooks.
