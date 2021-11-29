@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 // Se define el controlador de peticiones que usará los servicios disponibles
 @RestController
+@CrossOrigin(origins = "http://localhost:3000") // Indicar el dominio que va a hacer las peticiones HTTP
 public class TodoController {
 
     // Se inyectan los servicios al controlador
@@ -14,7 +15,7 @@ public class TodoController {
     private TodoService service;
 
     // EndPoint para listar todos los registros
-    @GetMapping("api/todos/list")
+    @GetMapping("api/todos")
     public Iterable<TodoModel> list(){
         return service.list();
     }
